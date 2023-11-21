@@ -7,7 +7,6 @@ import { motion, MotionProps } from "framer-motion"
 import ReactMarkdown from "react-markdown"
 import Balancer from "react-wrap-balancer"
 
-import { DEPLOY_URL } from "@/config/site"
 import { cn } from "@/lib/utils"
 import { fadeUpVariant } from "@/lib/utils/motion"
 import { buttonVariants } from "@/components/ui/button"
@@ -51,20 +50,6 @@ const demos = [
           <WalletConnect className="mx-auto inline-block" />
         </IsWalletDisconnected>
       </div>
-    ),
-  },
-  {
-    title: "One-click Deploy",
-    description:
-      "Start your next Web3 project in ⚡ Turbo Mode with a deploy to [Vercel](https://vercel.com/) in one click.",
-    demo: (
-      <a href={DEPLOY_URL} rel="noreferrer" target={"_blank"}>
-        <img
-          alt="Deploy with Vercel"
-          src="https://vercel.com/button"
-          width={120}
-        />
-      </a>
     ),
   },
   {
@@ -571,9 +556,8 @@ function DemoCard({ title, description, href, demo, large }: DemoCardProps) {
   return (
     <motion.div
       variants={fadeUpVariant()}
-      className={`relative col-span-1 overflow-hidden rounded-xl border bg-card px-4 shadow-sm transition-shadow hover:shadow-md ${
-        large ? "md:col-span-2" : ""
-      }`}
+      className={`relative col-span-1 overflow-hidden rounded-xl border bg-card px-4 shadow-sm transition-shadow hover:shadow-md ${large ? "md:col-span-2" : ""
+        }`}
     >
       <div className="flex h-60 items-center justify-center">{demo}</div>
       <div className="mx-auto max-w-xl text-center">

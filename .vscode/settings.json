@@ -24,7 +24,7 @@
   },
   "jest.jestCommandLine": "jest",
   "[typescriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "vscode.typescript-language-features"
   },
   "typescript.tsdk": "node_modules/.pnpm/typescript@4.9.4/node_modules/typescript/lib",
   "typescript.enablePromptUseWorkspaceTsdk": true,

@@ -1,34 +1,52 @@
 import Image from "next/image"
-import Link from "next/link"
-import { FaDiscord, FaGithub } from "react-icons/fa"
-import { LuBook } from "react-icons/lu"
 
 import { siteConfig } from "@/config/site"
 import { cn } from "@/lib/utils"
-import { buttonVariants } from "@/components/ui/button"
+import { Button, buttonVariants } from "@/components/ui/button"
 import {
   PageHeader,
   PageHeaderCTA,
   PageHeaderDescription,
   PageHeaderHeading,
 } from "@/components/layout/page-header"
-import { CopyButton } from "@/components/shared/copy-button"
 import { ExampleDemos } from "@/components/shared/example-demos"
 
 export default function HomePage() {
   return (
-    <div className="container relative mt-20 px-0">
+    <div className="container relative mt-12 px-0">
       <PageHeader className="pb-8">
         <Image
-          src="/logo-gradient.png"
+          src="/hyperion_assembly_logo.png"
           alt="TurboETH Logo"
           width={80}
           height={80}
-          className="h-20 w-20 rounded-2xl"
+          className="mb-6 h-20 w-20 rounded-2xl"
+          style={{
+            '-webkitBoxShadow': '5px 5px 0px 0px #a5a5a5, 10px 10px 0px 0px #bcbbbb, 15px 15px 0px 0px #d2d2d2',
+            boxShadow: '5px 5px 0px 0px #a5a5a5, 10px 10px 0px 0px #bcbbbb, 15px 15px 0px 0px #d2d2d2'
+          }}
         />
-        <PageHeaderHeading>Build Web3 in Turbo&nbsp;Mode</PageHeaderHeading>
+        <PageHeaderHeading>Welcome to&nbsp;Hyperion Assembly</PageHeaderHeading>
         <PageHeaderDescription>{siteConfig.description}</PageHeaderDescription>
         <PageHeaderCTA>
+          <Button
+            variant="default"
+            size="lg"
+            className="px-6 py-6"
+            type="button"
+          >
+            Join Hyperion
+          </Button>
+          <Button
+            variant="secondary"
+            size="lg"
+            className="px-6 py-6"
+            type="button"
+          >
+            See on Github
+          </Button>
+        </PageHeaderCTA>
+        {/* <PageHeaderCTA>
           <Link
             href={siteConfig.links.docs}
             target="_blank"
@@ -59,14 +77,7 @@ export default function HomePage() {
             <FaDiscord className="mr-2 h-4 w-4" />
             Discord
           </Link>
-        </PageHeaderCTA>
-        <PageHeaderCTA>
-          <CopyButton value="pnpm create turbo-eth@latest">
-            <span className="text-xs sm:text-base">
-              pnpm create turbo-eth@latest
-            </span>
-          </CopyButton>
-        </PageHeaderCTA>
+        </PageHeaderCTA> */}
       </PageHeader>
       <ExampleDemos />
     </div>

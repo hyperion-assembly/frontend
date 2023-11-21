@@ -4,7 +4,7 @@ import { siteConfig } from "@/config/site"
 
 export const runtime = "edge"
 
-export const alt = "TurboETH Logo"
+export const alt = "Hyperion Assembly"
 export const size = {
   width: 1200,
   height: 630,
@@ -31,7 +31,7 @@ export default async function Image() {
         <img
           alt="TurboETH Logo"
           src={new URL(
-            "../public/logo-gradient.png",
+            "../public/hyperion_assembly_logo.png",
             import.meta.url
           ).toString()}
           tw="w-20 h-20 mb-4 opacity-95"
