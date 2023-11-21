@@ -1,3 +1,5 @@
+![ha_landscape](https://github.com/hyperion-assembly/frontend/assets/686075/06a208c3-62ec-48e7-8862-99a21239e46b)
+
 # Hyperion Assembly frontend
 
 # Getting Started
