@@ -3,7 +3,11 @@
 // -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 export const menuAdmin = [
   {
-    label: "Users",
-    href: "/dashboard/admin",
+    label: "Projects",
+    href: "/dashboard/projects",
+  },
+  {
+    label: "Workspaces",
+    href: "/dashboard/Workspaces",
   },
 ]

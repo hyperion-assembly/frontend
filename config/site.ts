@@ -16,7 +16,7 @@ interface SiteConfig {
   }
 }
 
-export const SITE_CANONICAL = "https://turboeth.xyz"
+export const SITE_CANONICAL = "https://www.hyperionassembly.com"
 
 export const siteConfig: SiteConfig = {
   name: "Hyperion Assembly ",

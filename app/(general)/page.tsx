@@ -10,6 +10,7 @@ import {
   PageHeaderHeading,
 } from "@/components/layout/page-header"
 import { ExampleDemos } from "@/components/shared/example-demos"
+import Link from "next/link"
 
 export default function HomePage() {
   return (
@@ -17,7 +18,7 @@ export default function HomePage() {
       <PageHeader className="pb-8">
         <Image
           src="/hyperion_assembly_logo.png"
-          alt="TurboETH Logo"
+          alt="Hyperion Assembly Logo"
           width={80}
           height={80}
           className="mb-6 h-20 w-20 rounded-2xl"
@@ -29,22 +30,32 @@ export default function HomePage() {
         <PageHeaderHeading>Welcome to&nbsp;Hyperion Assembly</PageHeaderHeading>
         <PageHeaderDescription>{siteConfig.description}</PageHeaderDescription>
         <PageHeaderCTA>
-          <Button
-            variant="default"
-            size="lg"
-            className="px-6 py-6"
-            type="button"
+          <Link
+            href='/login'
           >
-            Join Hyperion
-          </Button>
-          <Button
-            variant="secondary"
-            size="lg"
-            className="px-6 py-6"
-            type="button"
+            <Button
+              variant="default"
+              size="lg"
+              className="px-6 py-6"
+              type="button"
+            >
+              Join Hyperion
+            </Button>
+          </Link>
+          <Link
+            href='https://github.com/hyperion-assembly/'
+            target="_blank"
+            rel="noreferrer noopener"
           >
-            See on Github
-          </Button>
+            <Button
+              variant="secondary"
+              size="lg"
+              className="px-6 py-6"
+              type="button"
+            >
+              Read more
+            </Button>
+          </Link>
         </PageHeaderCTA>
         {/* <PageHeaderCTA>
           <Link

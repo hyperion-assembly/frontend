@@ -28,14 +28,6 @@ export default function DashboardLayout({ children }: DashboardLayoutProps) {
           </ScrollArea>
           <footer className="fixed bottom-6 flex flex-col border-t pr-2 pt-4">
             <h3 className="text-sm font-semibold">{siteConfig.title}</h3>
-            <a
-              href="https://districtlabs.com"
-              target="_blank"
-              rel="noreferrer"
-              className="w-fit py-2 text-xs text-primary underline-offset-4 hover:underline"
-            >
-              Built by District Labs
-            </a>
             <div className="mt-2 flex items-center space-x-2">
               <Link href={siteConfig.links.github}>
                 <FaGithub />

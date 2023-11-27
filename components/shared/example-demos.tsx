@@ -142,73 +142,73 @@ const demos = [
       </div>
     ),
   },
-  {
-    title: "ERC20 WAGMI",
-    description:
-      "Read and Write to ERC20 smart contracts using minimal UI components.",
-    demo: (
-      <div className="min-w-[220px] text-center">
-        <img
-          alt={`Token USDC icon`}
-          className="mx-auto h-12 w-12 rounded-full border-2 border-white shadow-md"
-          src={`https://raw.githubusercontent.com/Uniswap/assets/master/blockchains/ethereum/assets/0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48/logo.png`}
-        />
-        <h3 className="mt-4 text-2xl font-normal">
-          <ERC20Name
-            address={
-              "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48" as "0x${string}"
-            }
-            chainId={1}
-          />{" "}
-          (
-          <ERC20Symbol
-            address={
-              "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48" as "0x${string}"
-            }
-            chainId={1}
-          />
-          )
-        </h3>
-        <p>
-          Decimals{" "}
-          <ERC20Decimals
-            address={
-              "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48" as "0x${string}"
-            }
-            chainId={1}
-          />
-        </p>
-        <Link href="/integration/erc20" className={cn(buttonVariants())}>
-          View Token Page
-        </Link>
-      </div>
-    ),
-  },
-  {
-    title: "ERC721 WAGMI",
-    description:
-      "Read and Write to ERC721 smart contracts using minimal UI components.",
-    demo: (
-      <div className="text-center">
-        <ERC721TokenUriName
-          address={"0xbcc664b1e6848caba2eb2f3de6e21f81b9276dd8"}
-          chainId={1}
-          tokenId={BigInt(1)}
-        />
-        <ERC721TokenUriImage
-          address={"0xbcc664b1e6848caba2eb2f3de6e21f81b9276dd8"}
-          chainId={1}
-          className="mx-auto my-4 rounded-xl border-2 border-white shadow-md"
-          height={100}
-          tokenId={BigInt(1)}
-          width={100}
-        />
-        <Link href={`/integration/erc721`} className={cn(buttonVariants())}>
-          View Token Page
-        </Link>
-      </div>
-    ),
-  },
+  // {
+  //   title: "ERC20 WAGMI",
+  //   description:
+  //     "Read and Write to ERC20 smart contracts using minimal UI components.",
+  //   demo: (
+  //     <div className="min-w-[220px] text-center">
+  //       <img
+  //         alt={`Token USDC icon`}
+  //         className="mx-auto h-12 w-12 rounded-full border-2 border-white shadow-md"
+  //         src={`https://raw.githubusercontent.com/Uniswap/assets/master/blockchains/ethereum/assets/0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48/logo.png`}
+  //       />
+  //       <h3 className="mt-4 text-2xl font-normal">
+  //         <ERC20Name
+  //           address={
+  //             "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48" as "0x${string}"
+  //           }
+  //           chainId={1}
+  //         />{" "}
+  //         (
+  //         <ERC20Symbol
+  //           address={
+  //             "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48" as "0x${string}"
+  //           }
+  //           chainId={1}
+  //         />
+  //         )
+  //       </h3>
+  //       <p>
+  //         Decimals{" "}
+  //         <ERC20Decimals
+  //           address={
+  //             "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48" as "0x${string}"
+  //           }
+  //           chainId={1}
+  //         />
+  //       </p>
+  //       <Link href="/integration/erc20" className={cn(buttonVariants())}>
+  //         View Token Page
+  //       </Link>
+  //     </div>
+  //   ),
+  // },
+  // {
+  //   title: "ERC721 WAGMI",
+  //   description:
+  //     "Read and Write to ERC721 smart contracts using minimal UI components.",
+  //   demo: (
+  //     <div className="text-center">
+  //       <ERC721TokenUriName
+  //         address={"0xbcc664b1e6848caba2eb2f3de6e21f81b9276dd8"}
+  //         chainId={1}
+  //         tokenId={BigInt(1)}
+  //       />
+  //       <ERC721TokenUriImage
+  //         address={"0xbcc664b1e6848caba2eb2f3de6e21f81b9276dd8"}
+  //         chainId={1}
+  //         className="mx-auto my-4 rounded-xl border-2 border-white shadow-md"
+  //         height={100}
+  //         tokenId={BigInt(1)}
+  //         width={100}
+  //       />
+  //       <Link href={`/integration/erc721`} className={cn(buttonVariants())}>
+  //         View Token Page
+  //       </Link>
+  //     </div>
+  //   ),
+  // },
   {
     title: turboIntegrations.sessionKeys.name,
     description: turboIntegrations.sessionKeys.description,

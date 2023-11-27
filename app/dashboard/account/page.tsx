@@ -39,7 +39,7 @@ export default function PageDashboardAccount() {
       </IsWalletConnected>
       <IsWalletDisconnected>
         <h3 className="text-lg font-normal">
-          Connect Wallet to view your personalized dashboard.
+          Dashboard Account view, hello 👋
         </h3>
       </IsWalletDisconnected>
     </motion.div>
