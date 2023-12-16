@@ -11,8 +11,8 @@ interface User {
 }
 
 export function useUser({ redirectTo = "", redirectIfFound = false } = {}) {
-  // @ts-expect-error
-  const { data: user, refetch: mutateUser } = useQuery<User>(["user"], {
+  const { data: user, refetch: mutateUser } = useQuery<User>({
+    queryKey: ["user"],
     queryFn: () => fetch("/api/app/user").then((res) => res.json()),
   })
 
@@ -25,10 +25,8 @@ export function useUser({ redirectTo = "", redirectIfFound = false } = {}) {
 
     if (
       // If redirectTo is set, redirect if the user was not found.
-      // @ts-expect-error
       (redirectTo && !redirectIfFound && !user?.isLoggedIn) ||
       // If redirectIfFound is also set, redirect if the user was found
-      // @ts-expect-error
       (redirectIfFound && user?.isLoggedIn)
     ) {
       Router.push(redirectTo)

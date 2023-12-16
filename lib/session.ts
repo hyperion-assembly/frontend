@@ -27,5 +27,3 @@ export const SERVER_SESSION_SETTINGS: SessionOptions = {
     secure: process.env.NODE_ENV == "production",
   },
 }
-
-console.log("lib/session.ts", SERVER_SESSION_SETTINGS)

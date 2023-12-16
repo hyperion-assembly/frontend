@@ -11,7 +11,6 @@ interface IsSignedOutProps {
 export const IsSignedOut = ({ children }: IsSignedOutProps) => {
   const { user } = useUser()
 
-  // @ts-expect-error
   if (!user?.isLoggedIn) return <>{children}</>
 
   return null
