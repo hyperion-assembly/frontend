@@ -38,11 +38,11 @@ export function UserNav() {
       }
     };
 
-    fetchUser();
+    void fetchUser();
   }, []);
 
   const onLogout = () => {
-    supabaseClient.auth.signOut();
+    void supabaseClient.auth.signOut();
     router.push('/');
   }
 
@@ -50,7 +50,7 @@ export function UserNav() {
     <>
       <DropdownMenuLabel className="font-normal">
         <div className="flex flex-col space-y-2">
-          <p className="text-md font-medium leading-none">{user?.user_metadata.preferred_username}</p>
+          <p className="text-base font-medium leading-none">{user?.user_metadata.preferred_username}</p>
           <p className="text-xs leading-none text-muted-foreground">
             {user?.user_metadata.account}
           </p>

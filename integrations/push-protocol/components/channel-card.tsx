@@ -62,7 +62,7 @@ export function ChannelCard({
               className="flex max-w-full flex-wrap items-center gap-2 overflow-hidden"
               href={channel.url}
             >
-              <p className="max-w-full overflow-hidden text-ellipsis whitespace-nowrap underline-offset-2 transition-all hover:underline md:text-xl">
+              <p className="max-w-full truncate underline-offset-2 transition-all hover:underline md:text-xl">
                 {channel.name}
               </p>
               <LuExternalLink />

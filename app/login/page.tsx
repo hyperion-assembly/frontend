@@ -36,7 +36,7 @@ export default function LoginPage() {
       }
     };
 
-    fetchUser();
+    void fetchUser();
   }, []);
 
   useEffect(() => {

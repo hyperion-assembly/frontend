@@ -62,16 +62,6 @@ export const turboIntegrations = {
     imgDark: "/integrations/etherscan-dark.svg",
     category: "general",
   },
-  disco: {
-    name: "Disco",
-    href: "/integration/disco",
-    url: "https://disco.xyz",
-    description:
-      "Disco is identity simplified. Giving the tools to consent to how information is shared and with whom.",
-    imgLight: "/integrations/discoLight.png",
-    imgDark: "/integrations/discoDark.png",
-    category: "services",
-  },
   sessionKeys: {
     name: "Session Keys",
     href: "/integration/session-keys",
@@ -91,16 +81,6 @@ export const turboIntegrations = {
     imgLight: "/integrations/lit-protocol.png",
     imgDark: "/integrations/lit-protocol.png",
     category: "services",
-  },
-  openai: {
-    name: "OpenAI",
-    href: "/integration/openai",
-    url: "https://www.openai.com/",
-    description:
-      "OpenAI offers AI models designed for advanced natural language processing.",
-    imgLight: "/integrations/openai-light.svg",
-    imgDark: "/integrations/openai-dark.svg",
-    category: "general",
   },
   pooltogether_v4: {
     name: "PoolTogether",

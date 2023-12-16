@@ -11,7 +11,7 @@
     "lint-fix": "eslint '**/*.{ts,tsx}' --fix",
     "format": "prettier . --list-different",
     "format-fix": "prettier . --write",
-    "run-ci": "concurrently -c \"auto\" -p \"name\" -n \"format,lint\" \"pnpm format\"  \"pnpm lint\"  ",
+    "run-ci": "concurrently -c \"auto\" -p \"name\" -n \"format,lint\" \"yarn format\"  \"yarn lint\"  ",
     "prepare": "husky install ; prisma generate ; wagmi generate"
   },
   "husky": {

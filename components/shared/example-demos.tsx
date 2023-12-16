@@ -53,22 +53,6 @@ const demos = [
     ),
   },
   {
-    title: turboIntegrations.disco.name,
-    description: turboIntegrations.disco.description,
-    href: turboIntegrations.disco.href,
-    demo: (
-      <div className="flex items-center justify-center space-x-20">
-        <Image
-          alt="Disco logo"
-          className="rounded-full"
-          height={100}
-          src="/integrations/discoDark.png"
-          width={100}
-        />
-      </div>
-    ),
-  },
-  {
     title: "Sign-In With Ethereum",
     description: turboIntegrations.siwe.description,
     href: turboIntegrations.siwe.href,
@@ -253,31 +237,6 @@ const demos = [
             alt="Lit Protocol logo"
             height={100}
             src={turboIntegrations.litProtocol.imgLight}
-            width={100}
-          />
-        </IsDarkTheme>
-      </div>
-    ),
-  },
-  {
-    title: turboIntegrations.openai.name,
-    description: turboIntegrations.openai.description,
-    href: turboIntegrations.openai.href,
-    demo: (
-      <div className="flex items-center justify-center space-x-20">
-        <IsLightTheme>
-          <Image
-            alt="OpenAI logo"
-            height={100}
-            src={turboIntegrations.openai.imgDark}
-            width={100}
-          />
-        </IsLightTheme>
-        <IsDarkTheme>
-          <Image
-            alt="OpenAI logo"
-            height={100}
-            src={turboIntegrations.openai.imgLight}
             width={100}
           />
         </IsDarkTheme>
