@@ -55,7 +55,6 @@ export function useChart({
   searchWidth = DEFAULT_SEARCH_WIDTH,
   spanDataPoints,
   period,
-  cacheTime = DEFAULT_CACHE_TIME,
   enabled,
   ...options
 }: UseChartProps) {
@@ -67,6 +66,7 @@ export function useChart({
     Array.isArray(coins) ? coins : [coins]
   )
 
+  // @ts-expect-error
   return useQuery(["defi-llama", "chart", coins], {
     queryFn: async () => {
       const url = new URL(`${DEFI_LLAMA_API_URL}/chart/${formattedCoins}`)

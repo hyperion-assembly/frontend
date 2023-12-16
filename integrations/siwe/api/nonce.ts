@@ -12,6 +12,7 @@ export async function GET(req: Request) {
   })
   const session = await getIronSession(req, res, SERVER_SESSION_SETTINGS)
   session.destroy()
+  // @ts-expect-error
   session.nonce = nonce
   await session.save()
 

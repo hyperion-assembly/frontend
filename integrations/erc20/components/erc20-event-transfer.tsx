@@ -14,7 +14,7 @@ export default function ERC20EventTransfer() {
   }>()
 
   useErc20TransferEvent({
-    address: token,
+    address: token as `0x${string}`,
     listener(logs) {
       const { args } = logs[0]
       const { _from, _to, _value } = args

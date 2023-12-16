@@ -3,5 +3,5 @@
 @tailwind utilities;
 
 .input {
-  @apply border-0 px-3 py-3 placeholder-neutral-400 text-gray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150;
+  @apply w-full rounded border-0 bg-white px-3 py-3 text-sm text-gray-600 placeholder-neutral-400 shadow transition-all duration-150 ease-linear focus:outline-none focus:ring;
 }

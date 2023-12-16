@@ -15,6 +15,7 @@ export function useGetTransactionVerbose({
   transactionHash,
   enabled,
 }: GetTransactionVerboseArgs) {
+  // @ts-expect-error
   return useQuery(["get-transaction-verbose", chain, transactionHash], {
     queryFn: async () => {
       const res = await fetch(
@@ -36,6 +37,7 @@ export function useGetTransactionVerboseRaw({
   transactionHash,
   enabled,
 }: GetTransactionVerboseArgs) {
+  // @ts-expect-error
   return useQuery(["get-transaction-verbose-raw", chain, transactionHash], {
     queryFn: async () => {
       const res = await fetch(

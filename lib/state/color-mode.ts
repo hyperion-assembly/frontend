@@ -1,5 +1,6 @@
 import { atom, useAtom, WritableAtom } from "jotai"
 
+// @ts-expect-error
 let strAtom: WritableAtom<string, string>
 if (typeof window !== "undefined") {
   strAtom = atom(window?.localStorage.getItem("theme") || "system")

@@ -1,4 +1,4 @@
-import { ImageResponse } from "next/server"
+import { ImageResponse } from "next/og"
 
 import { siteConfig } from "@/config/site"
 
@@ -28,14 +28,14 @@ export default async function Image() {
             "linear-gradient(to bottom right, #FFF 25%, #FFF0CA 75%)",
         }}
       >
-        <img
-          alt="TurboETH Logo"
+        {/* <img
+          alt="Hyperion Assembly Logo"
           src={new URL(
             "../public/hyperion_assembly_logo.png",
             import.meta.url
           ).toString()}
           tw="w-20 h-20 mb-4 opacity-95"
-        />
+        /> */}
         <h1
           style={{
             fontSize: "100px",

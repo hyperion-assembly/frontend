@@ -9,6 +9,8 @@ import { MainNav } from "@/components/layout/main-nav"
 import { MobileNav } from "@/components/layout/mobile-nav"
 import { ModeToggle } from "@/components/shared/mode-toggle"
 
+import { UserNav } from "./user-nav"
+
 export function SiteHeader() {
   const scrolled = useScroll(0)
 
@@ -21,8 +23,8 @@ export function SiteHeader() {
     >
       <div className="container flex h-20 items-center">
         <MainNav />
-        <MobileNav />
-        <div className="hidden flex-1 items-center justify-between space-x-2 md:flex md:justify-end">
+        {/* <MobileNav /> */}
+        <div className="hidden flex-1 items-center justify-between space-x-4 md:flex md:justify-end">
           {/* <Link
             href="/dashboard"
             className={buttonVariants({ variant: "ghost" })}
@@ -30,6 +32,7 @@ export function SiteHeader() {
             Dashboard
           </Link> */}
           <ModeToggle />
+          <UserNav />
         </div>
       </div>
     </header>

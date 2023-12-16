@@ -15,6 +15,7 @@ export function useGetContractLogs({
   address,
   enabled,
 }: GetContractLogsArgs) {
+  // @ts-expect-error
   return useQuery(["get-contract-logs", chain, address], {
     queryFn: async () => {
       const res = await fetch(
@@ -46,6 +47,7 @@ export function useGetContractLogsRaw({
   address,
   enabled,
 }: GetContractLogsArgs) {
+  // @ts-expect-error
   return useQuery(["get-contract-logs-raw", chain, address], {
     queryFn: async () => {
       const res = await fetch(

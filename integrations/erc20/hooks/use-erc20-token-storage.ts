@@ -6,6 +6,7 @@ type TokenType = Address | undefined
 
 const DEFAULT_VALUE: TokenType = undefined
 
+// @ts-expect-error
 let strAtom: WritableAtom<TokenType, SetStateAction<TokenType>>
 strAtom = atom<TokenType>(DEFAULT_VALUE)
 if (typeof window !== "undefined") {

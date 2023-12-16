@@ -15,6 +15,7 @@ export function useGetWalletTransactions({
   address,
   enabled,
 }: GetWalletTransactionsArgs) {
+  // @ts-expect-error
   return useQuery(["get-wallet-transactions", chain, address], {
     queryFn: async (): Promise<GetWalletTransactionsResponse | undefined> => {
       const res = await fetch(
@@ -36,6 +37,7 @@ export function useGetWalletTransactionsRaw({
   address,
   enabled,
 }: GetWalletTransactionsArgs) {
+  // @ts-expect-error
   return useQuery(["get-wallet-transactions-raw", chain, address], {
     queryFn: async () => {
       const res = await fetch(

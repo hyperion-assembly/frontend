@@ -59,7 +59,7 @@ export default function Erc20Page() {
           <div className="flex w-full max-w-screen-lg flex-col gap-y-8">
             <ERC20Deploy />
             <Erc20SetTokenStorage />
-            {token && (
+            {token ? (
               <>
                 <Card>
                   <CardContent className="flex flex-col">
@@ -77,11 +77,11 @@ export default function Erc20Page() {
                     </Link>
                   </CardContent>
                 </Card>
-                <ERC20Read address={token} />
-                <ERC20WriteMint address={token} />
-                <ERC20WriteTransfer address={token} />
+                <ERC20Read address={token as `0x${string}`} />
+                <ERC20WriteMint address={token as `0x${string}`} />
+                <ERC20WriteTransfer address={token as `0x${string}`} />
               </>
-            )}
+            ) : null}
           </div>
         </IsWalletConnected>
         <IsWalletDisconnected>

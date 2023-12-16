@@ -13,11 +13,11 @@ export function Erc20SetTokenStorage() {
 
   const onSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault()
-    setToken(tokenAddress)
+    setToken(tokenAddress as Address | undefined)
   }
 
   const isValidAddress = useMemo(
-    () => tokenAddress && isAddress(tokenAddress),
+    () => tokenAddress && isAddress(tokenAddress as Address),
     [tokenAddress]
   )
 
@@ -32,7 +32,7 @@ export function Erc20SetTokenStorage() {
           <label>Selected Contract Address</label>
           <input
             className="input"
-            value={tokenAddress}
+            value={tokenAddress as string}
             onChange={(e) => setTokenAddress(e.target.value as Address)}
           />
           <Button variant="emerald" disabled={!isValidAddress} type="submit">

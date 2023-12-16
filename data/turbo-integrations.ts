@@ -62,16 +62,6 @@ export const turboIntegrations = {
     imgDark: "/integrations/etherscan-dark.svg",
     category: "general",
   },
-  disco: {
-    name: "Disco",
-    href: "/integration/disco",
-    url: "https://disco.xyz",
-    description:
-      "Disco is identity simplified. Giving the tools to consent to how information is shared and with whom.",
-    imgLight: "/integrations/discoLight.png",
-    imgDark: "/integrations/discoDark.png",
-    category: "services",
-  },
   sessionKeys: {
     name: "Session Keys",
     href: "/integration/session-keys",
@@ -80,26 +70,6 @@ export const turboIntegrations = {
       "Short-lived private keys enable transaction signing and the granting of temporary smart contract permissions.",
     imgLight: "/integrations/session-keys.png",
     imgDark: "/integrations/session-keys.png",
-    category: "general",
-  },
-  litProtocol: {
-    name: "Lit Protocol",
-    href: "/integration/lit-protocol",
-    url: "https://litprotocol.com/",
-    description:
-      "Lit is distributed key management for encryption, signing, and compute.",
-    imgLight: "/integrations/lit-protocol.png",
-    imgDark: "/integrations/lit-protocol.png",
-    category: "services",
-  },
-  openai: {
-    name: "OpenAI",
-    href: "/integration/openai",
-    url: "https://www.openai.com/",
-    description:
-      "OpenAI offers AI models designed for advanced natural language processing.",
-    imgLight: "/integrations/openai-light.svg",
-    imgDark: "/integrations/openai-dark.svg",
     category: "general",
   },
   pooltogether_v4: {
@@ -119,36 +89,6 @@ export const turboIntegrations = {
     description: "Livepeer is the world's open video infrastructure.",
     imgLight: "/integrations/livepeer.svg",
     imgDark: "/integrations/livepeer.svg",
-    category: "protocols",
-  },
-  connext: {
-    name: "Connext",
-    href: "/integration/connext",
-    url: "https://docs.connext.network/",
-    description:
-      "Connext is a modular protocol for securely passing funds and data between chains.",
-    imgLight: "/integrations/connext.png",
-    imgDark: "/integrations/connext.png",
-    category: "protocols",
-  },
-  gelato: {
-    name: "Gelato",
-    href: "/integration/gelato",
-    url: "https://docs.gelato.network/",
-    description:
-      "Enabling developers to create augmented smart contracts that are automated, gasless & off-chain aware",
-    imgLight: "/integrations/gelato-light.svg",
-    imgDark: "/integrations/gelato-light.svg",
-    category: "protocols",
-  },
-  push_protocol: {
-    name: "Push Protocol",
-    href: "/integration/push-protocol",
-    url: "https://push.org/",
-    description:
-      "Push Protocol is a web3 communication network, enabling cross-chain notifications and messaging for dapps, wallets, and services.",
-    imgLight: "/integrations/push.svg",
-    imgDark: "/integrations/push.svg",
     category: "protocols",
   },
   moralis: {
@@ -179,25 +119,6 @@ export const turboIntegrations = {
     imgLight: "/integrations/arweave-light.png",
     imgDark: "/integrations/arweave-dark.png",
     category: "protocols",
-  },
-  lensProtocol: {
-    name: "Lens Protocol",
-    href: "/integration/lens-protocol",
-    url: "https://www.lens.xyz/",
-    description: "Lens Protocol is the social layer for Web3",
-    imgLight: "/integrations/lensprotocol-light.svg",
-    imgDark: "/integrations/lensprotocol-dark.svg",
-    category: "protocols",
-  },
-  gitcoinPassport: {
-    name: "Gitcoin Passport",
-    href: "/integration/gitcoin-passport",
-    url: "https://docs.passport.gitcoin.co/overview/introducing-gitcoin-passport",
-    description:
-      "Gitcoin Passport is an identity verification application. It enables you to collect verifiable credentials that prove your identity and trustworthiness without exposing personally identifying information.",
-    imgLight: "/integrations/gitcoin-passport.svg",
-    imgDark: "/integrations/gitcoin-passport.svg",
-    category: "services",
   },
   defiLlama: {
     name: "DefiLlama",

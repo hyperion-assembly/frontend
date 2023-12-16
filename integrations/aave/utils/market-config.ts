@@ -6,7 +6,6 @@ import {
   AaveV3Arbitrum,
   AaveV3ArbitrumGoerli,
   AaveV3Ethereum,
-  AaveV3Goerli,
   AaveV3Mumbai,
   AaveV3Optimism,
   AaveV3OptimismGoerli,
@@ -110,25 +109,6 @@ export const marketsData: MarketDataType[] = [
       UI_INCENTIVE_DATA_PROVIDER: AaveV3Sepolia.UI_INCENTIVE_DATA_PROVIDER,
     },
   },
-  {
-    marketTitle: "Ethereum Görli",
-    v3: true,
-    testnet: true,
-    chainId: goerli.id,
-    enabledFeatures: {
-      faucet: true,
-    },
-    addresses: {
-      LENDING_POOL_ADDRESS_PROVIDER: AaveV3Goerli.POOL_ADDRESSES_PROVIDER,
-      LENDING_POOL: AaveV3Goerli.POOL,
-      WETH_GATEWAY: AaveV3Goerli.WETH_GATEWAY,
-      FAUCET: AaveV3Goerli.FAUCET,
-      WALLET_BALANCE_PROVIDER: AaveV3Goerli.WALLET_BALANCE_PROVIDER,
-      UI_POOL_DATA_PROVIDER: AaveV3Goerli.UI_POOL_DATA_PROVIDER,
-      UI_INCENTIVE_DATA_PROVIDER: AaveV3Goerli.UI_INCENTIVE_DATA_PROVIDER,
-    },
-  },
-
   {
     marketTitle: "Arbitrum",
     v3: true,

@@ -53,22 +53,6 @@ const demos = [
     ),
   },
   {
-    title: turboIntegrations.disco.name,
-    description: turboIntegrations.disco.description,
-    href: turboIntegrations.disco.href,
-    demo: (
-      <div className="flex items-center justify-center space-x-20">
-        <Image
-          alt="Disco logo"
-          className="rounded-full"
-          height={100}
-          src="/integrations/discoDark.png"
-          width={100}
-        />
-      </div>
-    ),
-  },
-  {
     title: "Sign-In With Ethereum",
     description: turboIntegrations.siwe.description,
     href: turboIntegrations.siwe.href,
@@ -142,73 +126,73 @@ const demos = [
       </div>
     ),
   },
-  {
-    title: "ERC20 WAGMI",
-    description:
-      "Read and Write to ERC20 smart contracts using minimal UI components.",
-    demo: (
-      <div className="min-w-[220px] text-center">
-        <img
-          alt={`Token USDC icon`}
-          className="mx-auto h-12 w-12 rounded-full border-2 border-white shadow-md"
-          src={`https://raw.githubusercontent.com/Uniswap/assets/master/blockchains/ethereum/assets/0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48/logo.png`}
-        />
-        <h3 className="mt-4 text-2xl font-normal">
-          <ERC20Name
-            address={
-              "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48" as "0x${string}"
-            }
-            chainId={1}
-          />{" "}
-          (
-          <ERC20Symbol
-            address={
-              "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48" as "0x${string}"
-            }
-            chainId={1}
-          />
-          )
-        </h3>
-        <p>
-          Decimals{" "}
-          <ERC20Decimals
-            address={
-              "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48" as "0x${string}"
-            }
-            chainId={1}
-          />
-        </p>
-        <Link href="/integration/erc20" className={cn(buttonVariants())}>
-          View Token Page
-        </Link>
-      </div>
-    ),
-  },
-  {
-    title: "ERC721 WAGMI",
-    description:
-      "Read and Write to ERC721 smart contracts using minimal UI components.",
-    demo: (
-      <div className="text-center">
-        <ERC721TokenUriName
-          address={"0xbcc664b1e6848caba2eb2f3de6e21f81b9276dd8"}
-          chainId={1}
-          tokenId={BigInt(1)}
-        />
-        <ERC721TokenUriImage
-          address={"0xbcc664b1e6848caba2eb2f3de6e21f81b9276dd8"}
-          chainId={1}
-          className="mx-auto my-4 rounded-xl border-2 border-white shadow-md"
-          height={100}
-          tokenId={BigInt(1)}
-          width={100}
-        />
-        <Link href={`/integration/erc721`} className={cn(buttonVariants())}>
-          View Token Page
-        </Link>
-      </div>
-    ),
-  },
+  // {
+  //   title: "ERC20 WAGMI",
+  //   description:
+  //     "Read and Write to ERC20 smart contracts using minimal UI components.",
+  //   demo: (
+  //     <div className="min-w-[220px] text-center">
+  //       <img
+  //         alt={`Token USDC icon`}
+  //         className="mx-auto h-12 w-12 rounded-full border-2 border-white shadow-md"
+  //         src={`https://raw.githubusercontent.com/Uniswap/assets/master/blockchains/ethereum/assets/0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48/logo.png`}
+  //       />
+  //       <h3 className="mt-4 text-2xl font-normal">
+  //         <ERC20Name
+  //           address={
+  //             "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48" as "0x${string}"
+  //           }
+  //           chainId={1}
+  //         />{" "}
+  //         (
+  //         <ERC20Symbol
+  //           address={
+  //             "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48" as "0x${string}"
+  //           }
+  //           chainId={1}
+  //         />
+  //         )
+  //       </h3>
+  //       <p>
+  //         Decimals{" "}
+  //         <ERC20Decimals
+  //           address={
+  //             "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48" as "0x${string}"
+  //           }
+  //           chainId={1}
+  //         />
+  //       </p>
+  //       <Link href="/integration/erc20" className={cn(buttonVariants())}>
+  //         View Token Page
+  //       </Link>
+  //     </div>
+  //   ),
+  // },
+  // {
+  //   title: "ERC721 WAGMI",
+  //   description:
+  //     "Read and Write to ERC721 smart contracts using minimal UI components.",
+  //   demo: (
+  //     <div className="text-center">
+  //       <ERC721TokenUriName
+  //         address={"0xbcc664b1e6848caba2eb2f3de6e21f81b9276dd8"}
+  //         chainId={1}
+  //         tokenId={BigInt(1)}
+  //       />
+  //       <ERC721TokenUriImage
+  //         address={"0xbcc664b1e6848caba2eb2f3de6e21f81b9276dd8"}
+  //         chainId={1}
+  //         className="mx-auto my-4 rounded-xl border-2 border-white shadow-md"
+  //         height={100}
+  //         tokenId={BigInt(1)}
+  //         width={100}
+  //       />
+  //       <Link href={`/integration/erc721`} className={cn(buttonVariants())}>
+  //         View Token Page
+  //       </Link>
+  //     </div>
+  //   ),
+  // },
   {
     title: turboIntegrations.sessionKeys.name,
     description: turboIntegrations.sessionKeys.description,
@@ -228,56 +212,6 @@ const demos = [
             alt="Session keys logo"
             height={100}
             src={turboIntegrations.sessionKeys.imgLight}
-            width={100}
-          />
-        </IsDarkTheme>
-      </div>
-    ),
-  },
-  {
-    title: turboIntegrations.litProtocol.name,
-    description: turboIntegrations.litProtocol.description,
-    href: turboIntegrations.litProtocol.href,
-    demo: (
-      <div className="flex items-center justify-center space-x-20">
-        <IsLightTheme>
-          <Image
-            alt="Lit Protocol logo"
-            height={100}
-            src={turboIntegrations.litProtocol.imgDark}
-            width={100}
-          />
-        </IsLightTheme>
-        <IsDarkTheme>
-          <Image
-            alt="Lit Protocol logo"
-            height={100}
-            src={turboIntegrations.litProtocol.imgLight}
-            width={100}
-          />
-        </IsDarkTheme>
-      </div>
-    ),
-  },
-  {
-    title: turboIntegrations.openai.name,
-    description: turboIntegrations.openai.description,
-    href: turboIntegrations.openai.href,
-    demo: (
-      <div className="flex items-center justify-center space-x-20">
-        <IsLightTheme>
-          <Image
-            alt="OpenAI logo"
-            height={100}
-            src={turboIntegrations.openai.imgDark}
-            width={100}
-          />
-        </IsLightTheme>
-        <IsDarkTheme>
-          <Image
-            alt="OpenAI logo"
-            height={100}
-            src={turboIntegrations.openai.imgLight}
             width={100}
           />
         </IsDarkTheme>
@@ -335,81 +269,6 @@ const demos = [
     ),
   },
   {
-    title: turboIntegrations.connext.name,
-    description: turboIntegrations.connext.description,
-    href: turboIntegrations.connext.href,
-    demo: (
-      <div className="flex items-center justify-center space-x-20">
-        <IsLightTheme>
-          <Image
-            alt={`${turboIntegrations.connext.name} logo`}
-            height={100}
-            src={turboIntegrations.connext.imgDark}
-            width={100}
-          />
-        </IsLightTheme>
-        <IsDarkTheme>
-          <Image
-            alt={`${turboIntegrations.connext.name} logo`}
-            height={100}
-            src={turboIntegrations.connext.imgLight}
-            width={100}
-          />
-        </IsDarkTheme>
-      </div>
-    ),
-  },
-  {
-    title: turboIntegrations.gelato.name,
-    description: turboIntegrations.gelato.description,
-    href: turboIntegrations.gelato.href,
-    demo: (
-      <div className="flex items-center justify-center space-x-20">
-        <IsLightTheme>
-          <Image
-            alt={`${turboIntegrations.gelato.name} logo`}
-            height={100}
-            src={turboIntegrations.gelato.imgDark}
-            width={100}
-          />
-        </IsLightTheme>
-        <IsDarkTheme>
-          <Image
-            alt={`${turboIntegrations.gelato.name} logo`}
-            height={100}
-            src={turboIntegrations.gelato.imgLight}
-            width={100}
-          />
-        </IsDarkTheme>
-      </div>
-    ),
-  },
-  {
-    title: turboIntegrations.push_protocol.name,
-    description: turboIntegrations.push_protocol.description,
-    href: turboIntegrations.push_protocol.href,
-    demo: (
-      <div className="flex items-center justify-center space-x-20">
-        <IsLightTheme>
-          <Image
-            alt="Push Protocol logo"
-            height={100}
-            src={turboIntegrations.push_protocol.imgDark}
-            width={100}
-          />
-        </IsLightTheme>
-        <IsDarkTheme>
-          <Image
-            alt="Push Protocol logo"
-            height={100}
-            src={turboIntegrations.push_protocol.imgLight}
-            width={100}
-          />
-        </IsDarkTheme>
-      </div>
-    ),
-  },
-  {
     title: turboIntegrations.moralis.name,
     description: turboIntegrations.moralis.description,
     href: turboIntegrations.moralis.href,
@@ -451,38 +310,6 @@ const demos = [
           LightImage={turboIntegrations.arweave.imgDark}
           DarkImage={turboIntegrations.arweave.imgLight}
           alt="Arweave logo"
-          height={100}
-          width={100}
-        />
-      </div>
-    ),
-  },
-  {
-    title: turboIntegrations.gitcoinPassport.name,
-    description: turboIntegrations.gitcoinPassport.description,
-    href: turboIntegrations.gitcoinPassport.href,
-    demo: (
-      <div className="flex items-center justify-center space-x-20">
-        <LightDarkImage
-          LightImage={turboIntegrations.gitcoinPassport.imgDark}
-          DarkImage={turboIntegrations.gitcoinPassport.imgLight}
-          alt="Gitcoin Passport logo"
-          height={100}
-          width={100}
-        />
-      </div>
-    ),
-  },
-  {
-    title: turboIntegrations.lensProtocol.name,
-    description: turboIntegrations.lensProtocol.description,
-    href: turboIntegrations.lensProtocol.href,
-    demo: (
-      <div className="flex items-center justify-center space-x-20">
-        <LightDarkImage
-          LightImage={turboIntegrations.lensProtocol.imgDark}
-          DarkImage={turboIntegrations.lensProtocol.imgLight}
-          alt="Lens Protocol logo"
           height={100}
           width={100}
         />
@@ -556,8 +383,9 @@ function DemoCard({ title, description, href, demo, large }: DemoCardProps) {
   return (
     <motion.div
       variants={fadeUpVariant()}
-      className={`relative col-span-1 overflow-hidden rounded-xl border bg-card px-4 shadow-sm transition-shadow hover:shadow-md ${large ? "md:col-span-2" : ""
-        }`}
+      className={`relative col-span-1 overflow-hidden rounded-xl border bg-card px-4 shadow-sm transition-shadow hover:shadow-md ${
+        large ? "md:col-span-2" : ""
+      }`}
     >
       <div className="flex h-60 items-center justify-center">{demo}</div>
       <div className="mx-auto max-w-xl text-center">

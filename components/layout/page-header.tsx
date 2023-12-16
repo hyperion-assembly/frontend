@@ -57,7 +57,7 @@ function PageHeaderDescription({
     <motion.p
       variants={fadeDownVariant()}
       className={cn(
-        "text-center text-lg text-muted-foreground md:text-xl max-w-xl",
+        "max-w-xl text-center text-lg text-muted-foreground md:text-xl",
         className
       )}
       {...props}

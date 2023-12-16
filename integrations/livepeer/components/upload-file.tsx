@@ -57,8 +57,8 @@ export function UploadFile() {
       progress?.[0].phase === "uploading"
         ? Math.round((progress?.[0]?.progress * 100) / 2)
         : progress?.[0].phase === "processing"
-        ? Math.round((progress?.[0].progress * 100) / 2 + 50)
-        : 0,
+          ? Math.round((progress?.[0].progress * 100) / 2 + 50)
+          : 0,
     [progress]
   )
 
@@ -67,12 +67,12 @@ export function UploadFile() {
       progress?.[0].phase === "failed"
         ? "Failed to process video."
         : progress?.[0].phase === "waiting"
-        ? "Waiting..."
-        : progress?.[0].phase === "uploading"
-        ? `Uploading: ${totalProgress}%`
-        : progress?.[0].phase === "processing"
-        ? `Processing: ${totalProgress}%`
-        : null,
+          ? "Waiting..."
+          : progress?.[0].phase === "uploading"
+            ? `Uploading: ${totalProgress}%`
+            : progress?.[0].phase === "processing"
+              ? `Processing: ${totalProgress}%`
+              : null,
     [progress]
   )
 

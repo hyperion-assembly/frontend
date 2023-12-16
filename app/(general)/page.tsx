@@ -1,4 +1,5 @@
 import Image from "next/image"
+import Link from "next/link"
 
 import { siteConfig } from "@/config/site"
 import { cn } from "@/lib/utils"
@@ -17,34 +18,35 @@ export default function HomePage() {
       <PageHeader className="pb-8">
         <Image
           src="/hyperion_assembly_logo.png"
-          alt="TurboETH Logo"
+          alt="Hyperion Assembly Logo"
           width={80}
           height={80}
           className="mb-6 h-20 w-20 rounded-2xl"
           style={{
-            '-webkitBoxShadow': '5px 5px 0px 0px #a5a5a5, 10px 10px 0px 0px #bcbbbb, 15px 15px 0px 0px #d2d2d2',
-            boxShadow: '5px 5px 0px 0px #a5a5a5, 10px 10px 0px 0px #bcbbbb, 15px 15px 0px 0px #d2d2d2'
+            // @ts-expect-error
+            "-webkitBoxShadow":
+              "5px 5px 0px 0px #a5a5a5, 10px 10px 0px 0px #bcbbbb, 15px 15px 0px 0px #d2d2d2",
+            boxShadow:
+              "5px 5px 0px 0px #a5a5a5, 10px 10px 0px 0px #bcbbbb, 15px 15px 0px 0px #d2d2d2",
           }}
         />
         <PageHeaderHeading>Welcome to&nbsp;Hyperion Assembly</PageHeaderHeading>
         <PageHeaderDescription>{siteConfig.description}</PageHeaderDescription>
         <PageHeaderCTA>
-          <Button
-            variant="default"
-            size="lg"
-            className="px-6 py-6"
-            type="button"
+          <Link href="/login">
+            <Button variant="default" size="lg" className="p-6" type="button">
+              Join Hyperion
+            </Button>
+          </Link>
+          <Link
+            href="https://github.com/hyperion-assembly/"
+            target="_blank"
+            rel="noreferrer noopener"
           >
-            Join Hyperion
-          </Button>
-          <Button
-            variant="secondary"
-            size="lg"
-            className="px-6 py-6"
-            type="button"
-          >
-            See on Github
-          </Button>
+            <Button variant="secondary" size="lg" className="p-6" type="button">
+              Read more
+            </Button>
+          </Link>
         </PageHeaderCTA>
         {/* <PageHeaderCTA>
           <Link
@@ -79,7 +81,7 @@ export default function HomePage() {
           </Link>
         </PageHeaderCTA> */}
       </PageHeader>
-      <ExampleDemos />
+      {/* <ExampleDemos /> */}
     </div>
   )
 }

@@ -134,12 +134,6 @@ export function MobileNav() {
                 </AccordionContent>
               </AccordionItem>
             </Accordion>
-            <Link
-              href="https://docs.turboeth.xyz/overview"
-              className="font-medium"
-            >
-              Documentation
-            </Link>
             <Separator />
           </div>
         </ScrollArea>

@@ -44,10 +44,12 @@ export async function POST(
 
     let events
     if (isGetContractLogs) {
+      // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+      // @ts-expect-error
       events = await Moralis.EvmApi.events[safeMethod](data.args)
     } else {
       // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-      // @ts-ignore
+      // @ts-expect-error
       events = await Moralis.EvmApi.events[safeMethod](data.args)
     }
 

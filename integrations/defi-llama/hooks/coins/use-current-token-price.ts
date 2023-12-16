@@ -39,7 +39,6 @@ interface UseCurrentTokenPriceProps extends QueryOptions {
 export function useCurrentTokenPrice({
   coins,
   searchWidth = DEFAULT_SEARCH_WIDTH,
-  cacheTime = DEFAULT_CACHE_TIME,
   enabled,
   ...options
 }: UseCurrentTokenPriceProps) {
@@ -74,6 +73,7 @@ export function useCurrentTokenPrice({
     }
   }
 
+  // @ts-expect-error
   return useQuery(["defi-llama", "current-price", coins, searchWidth], {
     queryFn: fetcher,
     enabled: !!coins && enabled,
@@ -103,6 +103,7 @@ export function useCurrentNativeTokenPrice(
   })
 
   const formattedData =
+    // @ts-expect-error
     queryResult.data?.coins?.[formatCoinsInput([coinsInput])]
 
   return { ...queryResult, data: formattedData }
@@ -131,6 +132,7 @@ export function useCurrentERC20TokenPrice(
   })
 
   const formattedData =
+    // @ts-expect-error
     queryResult.data?.coins?.[formatCoinsInput([coinsInput])]
 
   return { ...queryResult, data: formattedData }

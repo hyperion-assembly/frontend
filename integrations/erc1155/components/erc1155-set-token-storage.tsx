@@ -22,7 +22,7 @@ export function Erc1155SetTokenStorage() {
   )
 
   useEffect(() => {
-    setTokenAddress(token)
+    setTokenAddress(token as Address)
   }, [token])
 
   return (

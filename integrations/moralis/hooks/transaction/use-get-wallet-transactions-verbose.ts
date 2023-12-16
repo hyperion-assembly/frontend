@@ -15,6 +15,7 @@ export function useGetWalletTransactionsVerbose({
   address,
   enabled,
 }: GetWalletTransactionsVerbose) {
+  // @ts-expect-error
   return useQuery(["get-wallet-transactions-verbose", chain, address], {
     queryFn: async () => {
       const res = await fetch(
@@ -36,6 +37,7 @@ export function useGetWalletTransactionsVerboseRaw({
   address,
   enabled,
 }: GetWalletTransactionsVerbose) {
+  // @ts-expect-error
   return useQuery(["get-wallet-transactions-verbose-raw", chain, address], {
     queryFn: async () => {
       const res = await fetch(
