@@ -20,6 +20,7 @@ export function useGetContractEvents({
   enabled,
 }: GetContractEventsArgs) {
   console
+  // @ts-expect-error
   return useQuery(["get-contract-events", chain, address, topic, abi], {
     queryFn: async () => {
       const res = await fetch(
@@ -55,6 +56,7 @@ export function useGetContractEventsRaw({
   abi,
   enabled,
 }: GetContractEventsArgs) {
+  // @ts-expect-error
   return useQuery(["get-contract-events-raw", chain, address, topic, abi], {
     queryFn: async () => {
       const res = await fetch(

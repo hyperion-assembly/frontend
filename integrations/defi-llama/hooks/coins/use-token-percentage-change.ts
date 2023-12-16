@@ -40,7 +40,6 @@ export function useTokenPercentageChange({
   period = "1d",
   lookForward = false,
   timestamp = Date.now() / 1000,
-  cacheTime = DEFAULT_CACHE_TIME,
   enabled,
   ...options
 }: UseTokenPercentageChangeProps) {
@@ -72,15 +71,15 @@ export function useTokenPercentageChange({
     }
   }
 
-  return useQuery(
-    [
-      "defi-llama",
-      "percentage-change-price",
-      coins,
-      period,
-      lookForward,
-      timestamp,
-    ],
+  // @ts-expect-error
+  return useQuery([
+    "defi-llama",
+    "percentage-change-price",
+    coins,
+    period,
+    lookForward,
+    timestamp,
+  ],
     {
       queryFn: fetcher,
       enabled: !!coins && enabled,
@@ -109,6 +108,7 @@ export function useNativeTokenPercentageChange(
   const queryResult = useTokenPercentageChange({ coins: coinsInput, ...props })
 
   const formattedData =
+    // @ts-expect-error
     queryResult.data?.coins?.[formatCoinsInput([coinsInput])]
 
   return { ...queryResult, data: formattedData }
@@ -135,6 +135,7 @@ export function useERC20TokenPercentageChange(
   const queryResult = useTokenPercentageChange({ coins: coinsInput, ...props })
 
   const formattedData =
+    // @ts-expect-error
     queryResult.data?.coins?.[formatCoinsInput([coinsInput])]
 
   return { ...queryResult, data: formattedData }

@@ -15,6 +15,7 @@ export function useGetTransaction({
   transactionHash,
   enabled,
 }: GetTransactionArgs) {
+  // @ts-expect-error
   return useQuery(["get-transaction", chain, transactionHash], {
     queryFn: async () => {
       const res = await fetch(
@@ -36,6 +37,7 @@ export function useGetTransactionRaw({
   transactionHash,
   enabled,
 }: GetTransactionArgs) {
+  // @ts-expect-error
   return useQuery(["get-transaction-raw", chain, transactionHash], {
     queryFn: async () => {
       const res = await fetch(

@@ -31,8 +31,6 @@
   },
   "dependencies": {
     "@bgd-labs/aave-address-book": "^2.13.0",
-    "@connext/sdk": "2.1.2",
-    "@gelatonetwork/automate-sdk": "^3.0.0",
     "@graphql-typed-document-node/core": "^3.2.0",
     "@hookform/resolvers": "^3.1.1",
     "@livepeer/react": "^3.1.4",

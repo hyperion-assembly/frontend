@@ -82,7 +82,7 @@ export function ERC721Deploy() {
             <span className="font-semibold">
               {token ? "Mint Contract Address" : "Deploying contract"}:
             </span>
-            <BlockExplorerLink address={token} />
+            <BlockExplorerLink address={token as `0x${string}`} />
           </div>
         )}
       </CardContent>

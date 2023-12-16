@@ -7,6 +7,7 @@ export async function GET(req: Request) {
   try {
     const res = new Response()
     const session = await getIronSession(req, res, SERVER_SESSION_SETTINGS)
+    // @ts-expect-error
     const address = session.siwe?.address
     if (!address) {
       return new Response("Unauthorized", { status: 401 })
@@ -33,6 +34,7 @@ export async function GET(req: Request) {
       config
     )
     return new Response(
+      // @ts-expect-error
       JSON.stringify({ address: session.siwe?.address, transactions }),
       {
         headers: { "content-type": "application/json" },

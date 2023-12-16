@@ -41,7 +41,6 @@ interface UseHistoricalTokenPriceProps extends QueryOptions {
 export function useHistoricalTokenPrice({
   coins,
   searchWidth = DEFAULT_SEARCH_WIDTH,
-  cacheTime = DEFAULT_CACHE_TIME,
   enabled,
   timestamp,
   ...options
@@ -78,6 +77,7 @@ export function useHistoricalTokenPrice({
   }
 
   return useQuery(
+    // @ts-expect-error
     ["defi-llama", "historical-price", coins, searchWidth, timestamp],
     {
       queryFn: fetcher,
@@ -108,8 +108,8 @@ export function useHistoricalNativeTokenPrice(
     ...props,
   })
 
-  const formattedData =
-    queryResult.data?.coins?.[formatCoinsInput([coinsInput])]
+  // @ts-expect-error
+  const formattedData = queryResult.data?.coins?.[formatCoinsInput([coinsInput])]
 
   return { ...queryResult, data: formattedData }
 }
@@ -136,8 +136,8 @@ export function useHistoricalERC20TokenPrice(
     ...props,
   })
 
-  const formattedData =
-    queryResult.data?.coins?.[formatCoinsInput([coinsInput])]
+  // @ts-expect-error
+  const formattedData = queryResult.data?.coins?.[formatCoinsInput([coinsInput])]
 
   return { ...queryResult, data: formattedData }
 }

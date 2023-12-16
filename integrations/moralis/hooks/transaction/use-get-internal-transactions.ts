@@ -15,6 +15,7 @@ export function useGetInternalTransactions({
   transactionHash,
   enabled,
 }: GetInternalTransactionsArgs) {
+  // @ts-expect-error
   return useQuery(["get-internal-transactions", chain, transactionHash], {
     queryFn: async () => {
       const res = await fetch(
@@ -36,6 +37,7 @@ export function useGetInternalTransactionsRaw({
   transactionHash,
   enabled,
 }: GetInternalTransactionsArgs) {
+  // @ts-expect-error
   return useQuery(["get-internal-transactions-raw", chain, transactionHash], {
     queryFn: async () => {
       const res = await fetch(
