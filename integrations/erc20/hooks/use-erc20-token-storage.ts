@@ -13,8 +13,8 @@ if (typeof window !== "undefined") {
   strAtom = atom<TokenType>(
     window?.localStorage.getItem("erc20-token")
       ? (JSON.parse(
-        window?.localStorage?.getItem("erc20-token") || ""
-      ) as Address)
+          window?.localStorage?.getItem("erc20-token") || ""
+        ) as Address)
       : DEFAULT_VALUE
   )
 } else {

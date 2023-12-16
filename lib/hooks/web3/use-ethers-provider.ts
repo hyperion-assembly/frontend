@@ -1,7 +1,7 @@
 import { useMemo } from "react"
+import { FallbackProvider, JsonRpcProvider, Provider } from "ethers"
 import { type HttpTransport } from "viem"
 import { usePublicClient, type PublicClient } from "wagmi"
-import { JsonRpcProvider, FallbackProvider, Provider } from "ethers"
 
 export function publicClientToProvider(publicClient: PublicClient) {
   const { chain, transport } = publicClient

@@ -28,4 +28,4 @@ export const SERVER_SESSION_SETTINGS: SessionOptions = {
   },
 }
 
-console.log('lib/session.ts', SERVER_SESSION_SETTINGS)
+console.log("lib/session.ts", SERVER_SESSION_SETTINGS)

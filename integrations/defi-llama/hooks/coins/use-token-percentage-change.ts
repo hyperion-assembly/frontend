@@ -72,14 +72,15 @@ export function useTokenPercentageChange({
   }
 
   // @ts-expect-error
-  return useQuery([
-    "defi-llama",
-    "percentage-change-price",
-    coins,
-    period,
-    lookForward,
-    timestamp,
-  ],
+  return useQuery(
+    [
+      "defi-llama",
+      "percentage-change-price",
+      coins,
+      period,
+      lookForward,
+      timestamp,
+    ],
     {
       queryFn: fetcher,
       enabled: !!coins && enabled,

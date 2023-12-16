@@ -124,8 +124,8 @@ export default function LoginPage() {
               },
             },
           }}
-        // queryParams={searchParams}
-        // dark
+          // queryParams={searchParams}
+          // dark
         />
       )}
     </div>

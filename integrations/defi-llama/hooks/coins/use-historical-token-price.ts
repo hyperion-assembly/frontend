@@ -109,7 +109,8 @@ export function useHistoricalNativeTokenPrice(
   })
 
   // @ts-expect-error
-  const formattedData = queryResult.data?.coins?.[formatCoinsInput([coinsInput])]
+  const formattedData =
+    queryResult.data?.coins?.[formatCoinsInput([coinsInput])]
 
   return { ...queryResult, data: formattedData }
 }
@@ -137,7 +138,8 @@ export function useHistoricalERC20TokenPrice(
   })
 
   // @ts-expect-error
-  const formattedData = queryResult.data?.coins?.[formatCoinsInput([coinsInput])]
+  const formattedData =
+    queryResult.data?.coins?.[formatCoinsInput([coinsInput])]
 
   return { ...queryResult, data: formattedData }
 }

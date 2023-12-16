@@ -33,8 +33,8 @@ export async function POST(
       GetContractLogs | GetContractEvents,
       GetContractLogs | GetContractEvents
     > = isGetContractLogs
-        ? getContractLogsSchema.safeParse(requestJson)
-        : getContractEventsSchema.safeParse(requestJson)
+      ? getContractLogsSchema.safeParse(requestJson)
+      : getContractEventsSchema.safeParse(requestJson)
 
     if (!safeRequest.success) throw new Error("Invalid request body")
     const { data } = safeRequest
