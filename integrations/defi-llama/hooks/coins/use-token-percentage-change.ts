@@ -71,8 +71,8 @@ export function useTokenPercentageChange({
     }
   }
 
-  // @ts-expect-error
   return useQuery(
+    // @ts-expect-error
     [
       "defi-llama",
       "percentage-change-price",
