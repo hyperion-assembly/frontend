@@ -8,7 +8,7 @@ export const env = createEnv({
     //   .string()
     //   .min(32)
     //   .default("complex_password_at_least_32_characters_long"),
-    // DATABASE_URL: z.string().url().optional(),
+    DATABASE_URL: z.string().url().optional(),
     // // Comma separated list of Ethereum addresses, accepts optinal whitespace after comma
     APP_ADMINS: z
       .string()
@@ -19,8 +19,8 @@ export const env = createEnv({
     // ETHERSCAN_API_KEY_ARBITRUM: z.string().min(1).optional(),
     // ETHERSCAN_API_KEY_POLYGON: z.string().min(1).optional(),
     // MORALIS_API_KEY: z.string().min(1).optional(),
-    GITCOIN_PASSPORT_SCORER_ID: z.string().min(1).optional(),
-    GITCOIN_PASSPORT_API_KEY: z.string().min(1).optional(),
+    GITCOIN_PASSPORT_SCORER_ID: z.string().optional(),
+    GITCOIN_PASSPORT_API_KEY: z.string().optional(),
   },
   client: {
     NEXT_PUBLIC_USE_PUBLIC_PROVIDER: z.enum(["true", "false"]).default("true"),

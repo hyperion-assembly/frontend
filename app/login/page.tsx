@@ -73,6 +73,7 @@ export default function LoginPage() {
           height={80}
           className="mb-6 h-20 w-20 rounded-2xl"
           style={{
+            // @ts-ignore
             "-webkitBoxShadow":
               "5px 5px 0px 0px #a5a5a5, 10px 10px 0px 0px #bcbbbb, 15px 15px 0px 0px #d2d2d2",
             boxShadow:
@@ -123,8 +124,8 @@ export default function LoginPage() {
               },
             },
           }}
-          // queryParams={searchParams}
-          // dark
+        // queryParams={searchParams}
+        // dark
         />
       )}
     </div>
