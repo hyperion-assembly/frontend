@@ -11,7 +11,7 @@ interface QueryOptions
       unknown,
       unknown,
       TokenPercentageChangeResponse,
-      (string | number | Period | boolean | CoinsInput | CoinsInput[])[]
+      (number | Period | boolean | CoinsInput | CoinsInput[])[]
     >,
     "initialData" | "queryKey"
   > {
