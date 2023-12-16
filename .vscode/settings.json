@@ -31,5 +31,11 @@
   "prettier.prettierPath": "./node_modules/prettier",
   "[yaml]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[markdown]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   } // Workaround fix for prettier force checking node modules.
 }

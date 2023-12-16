@@ -30,7 +30,7 @@ export const TablePagination = ({
   setPageSize,
 }: ITablePagination): ReactElement => {
   return (
-    <div className="flex justify-between items-center bg-background text-foreground shadow-sm px-3 py-5 rounded-b-lg">
+    <div className="flex items-center justify-between rounded-b-lg bg-background px-3 py-5 text-foreground shadow-sm">
       <div className="flex items-center">
         <div className="">
           <button onClick={() => gotoPage(0)} disabled={!canPreviousPage}>
@@ -56,11 +56,11 @@ export const TablePagination = ({
           </span>
         </div>
         |
-        <span className="bg-card mx-2 inline-block rounded-xl py-3 px-2">
+        <span className="mx-2 inline-block rounded-xl bg-card px-2 py-3">
           <span className="p-2">
             Go to page:{" "}
             <Input
-              className="inline-block ml-3 h-[32px] w-[64px]"
+              className="ml-3 inline-block h-[32px] w-[64px]"
               type="number"
               min={1}
               max={pageCount}

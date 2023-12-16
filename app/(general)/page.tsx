@@ -1,4 +1,5 @@
 import Image from "next/image"
+import Link from "next/link"
 
 import { siteConfig } from "@/config/site"
 import { cn } from "@/lib/utils"
@@ -10,7 +11,6 @@ import {
   PageHeaderHeading,
 } from "@/components/layout/page-header"
 import { ExampleDemos } from "@/components/shared/example-demos"
-import Link from "next/link"
 
 export default function HomePage() {
   return (
@@ -23,36 +23,26 @@ export default function HomePage() {
           height={80}
           className="mb-6 h-20 w-20 rounded-2xl"
           style={{
-            '-webkitBoxShadow': '5px 5px 0px 0px #a5a5a5, 10px 10px 0px 0px #bcbbbb, 15px 15px 0px 0px #d2d2d2',
-            boxShadow: '5px 5px 0px 0px #a5a5a5, 10px 10px 0px 0px #bcbbbb, 15px 15px 0px 0px #d2d2d2'
+            "-webkitBoxShadow":
+              "5px 5px 0px 0px #a5a5a5, 10px 10px 0px 0px #bcbbbb, 15px 15px 0px 0px #d2d2d2",
+            boxShadow:
+              "5px 5px 0px 0px #a5a5a5, 10px 10px 0px 0px #bcbbbb, 15px 15px 0px 0px #d2d2d2",
           }}
         />
         <PageHeaderHeading>Welcome to&nbsp;Hyperion Assembly</PageHeaderHeading>
         <PageHeaderDescription>{siteConfig.description}</PageHeaderDescription>
         <PageHeaderCTA>
-          <Link
-            href='/login'
-          >
-            <Button
-              variant="default"
-              size="lg"
-              className="p-6"
-              type="button"
-            >
+          <Link href="/login">
+            <Button variant="default" size="lg" className="p-6" type="button">
               Join Hyperion
             </Button>
           </Link>
           <Link
-            href='https://github.com/hyperion-assembly/'
+            href="https://github.com/hyperion-assembly/"
             target="_blank"
             rel="noreferrer noopener"
           >
-            <Button
-              variant="secondary"
-              size="lg"
-              className="p-6"
-              type="button"
-            >
+            <Button variant="secondary" size="lg" className="p-6" type="button">
               Read more
             </Button>
           </Link>

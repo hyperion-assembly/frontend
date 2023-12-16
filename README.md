@@ -93,6 +93,7 @@ Common types according to [commitlint-config-conventional (based on the Angular 
 - test
 
 # Acknowledgements
+
 based on Web3 App Template built using Next.js, RainbowKit, Tailwind, etc https://github.com/turbo-eth/template-web3-app
 
 original template was forked from https://github.com/wslyvh/nexth

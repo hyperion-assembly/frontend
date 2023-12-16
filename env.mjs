@@ -19,7 +19,7 @@ export const env = createEnv({
     // ETHERSCAN_API_KEY_ARBITRUM: z.string().min(1).optional(),
     // ETHERSCAN_API_KEY_POLYGON: z.string().min(1).optional(),
     // MORALIS_API_KEY: z.string().min(1).optional(),
-    // GITCOIN_PASSPORT_SCORER_ID: z.string().min(1).optional(),
+    GITCOIN_PASSPORT_SCORER_ID: z.string().min(1).optional(),
     GITCOIN_PASSPORT_API_KEY: z.string().min(1).optional(),
   },
   client: {
