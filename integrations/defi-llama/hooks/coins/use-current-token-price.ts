@@ -102,8 +102,8 @@ export function useCurrentNativeTokenPrice(
     ...props,
   })
 
-  // @ts-expect-error
   const formattedData =
+    // @ts-expect-error
     queryResult.data?.coins?.[formatCoinsInput([coinsInput])]
 
   return { ...queryResult, data: formattedData }
@@ -131,8 +131,8 @@ export function useCurrentERC20TokenPrice(
     ...props,
   })
 
-  // @ts-expect-error
   const formattedData =
+    // @ts-expect-error
     queryResult.data?.coins?.[formatCoinsInput([coinsInput])]
 
   return { ...queryResult, data: formattedData }
