@@ -219,31 +219,6 @@ const demos = [
     ),
   },
   {
-    title: turboIntegrations.litProtocol.name,
-    description: turboIntegrations.litProtocol.description,
-    href: turboIntegrations.litProtocol.href,
-    demo: (
-      <div className="flex items-center justify-center space-x-20">
-        <IsLightTheme>
-          <Image
-            alt="Lit Protocol logo"
-            height={100}
-            src={turboIntegrations.litProtocol.imgDark}
-            width={100}
-          />
-        </IsLightTheme>
-        <IsDarkTheme>
-          <Image
-            alt="Lit Protocol logo"
-            height={100}
-            src={turboIntegrations.litProtocol.imgLight}
-            width={100}
-          />
-        </IsDarkTheme>
-      </div>
-    ),
-  },
-  {
     title: turboIntegrations.pooltogether_v4.name,
     description: turboIntegrations.pooltogether_v4.description,
     href: turboIntegrations.pooltogether_v4.href,
@@ -433,22 +408,6 @@ const demos = [
     ),
   },
   {
-    title: turboIntegrations.lensProtocol.name,
-    description: turboIntegrations.lensProtocol.description,
-    href: turboIntegrations.lensProtocol.href,
-    demo: (
-      <div className="flex items-center justify-center space-x-20">
-        <LightDarkImage
-          LightImage={turboIntegrations.lensProtocol.imgDark}
-          DarkImage={turboIntegrations.lensProtocol.imgLight}
-          alt="Lens Protocol logo"
-          height={100}
-          width={100}
-        />
-      </div>
-    ),
-  },
-  {
     title: turboIntegrations.defiLlama.name,
     description: turboIntegrations.defiLlama.description,
     href: turboIntegrations.defiLlama.href,
@@ -515,9 +474,8 @@ function DemoCard({ title, description, href, demo, large }: DemoCardProps) {
   return (
     <motion.div
       variants={fadeUpVariant()}
-      className={`relative col-span-1 overflow-hidden rounded-xl border bg-card px-4 shadow-sm transition-shadow hover:shadow-md ${
-        large ? "md:col-span-2" : ""
-      }`}
+      className={`relative col-span-1 overflow-hidden rounded-xl border bg-card px-4 shadow-sm transition-shadow hover:shadow-md ${large ? "md:col-span-2" : ""
+        }`}
     >
       <div className="flex h-60 items-center justify-center">{demo}</div>
       <div className="mx-auto max-w-xl text-center">

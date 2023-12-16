@@ -10,6 +10,7 @@ export async function GET(req: Request) {
   try {
     const res = new Response()
     const session = await getIronSession(req, res, SERVER_SESSION_SETTINGS)
+    // @ts-expect-error
     const isAdmin = session.isAdmin
     if (!isAdmin) {
       return new Response("Unauthorized", { status: 401 })

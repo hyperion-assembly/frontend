@@ -72,16 +72,6 @@ export const turboIntegrations = {
     imgDark: "/integrations/session-keys.png",
     category: "general",
   },
-  litProtocol: {
-    name: "Lit Protocol",
-    href: "/integration/lit-protocol",
-    url: "https://litprotocol.com/",
-    description:
-      "Lit is distributed key management for encryption, signing, and compute.",
-    imgLight: "/integrations/lit-protocol.png",
-    imgDark: "/integrations/lit-protocol.png",
-    category: "services",
-  },
   pooltogether_v4: {
     name: "PoolTogether",
     href: "/integration/pooltogether-v4",
@@ -158,15 +148,6 @@ export const turboIntegrations = {
       "Arweave is the first protocol that enables permanent data storage. Its design allows anyone to preserve data forever with just a single, one-time fee.",
     imgLight: "/integrations/arweave-light.png",
     imgDark: "/integrations/arweave-dark.png",
-    category: "protocols",
-  },
-  lensProtocol: {
-    name: "Lens Protocol",
-    href: "/integration/lens-protocol",
-    url: "https://www.lens.xyz/",
-    description: "Lens Protocol is the social layer for Web3",
-    imgLight: "/integrations/lensprotocol-light.svg",
-    imgDark: "/integrations/lensprotocol-dark.svg",
     category: "protocols",
   },
   gitcoinPassport: {

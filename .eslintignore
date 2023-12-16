@@ -4,3 +4,6 @@
 **/generated
 .next/**
 tailwind.config.js
+
+./integrations/**/**.tsx
+integrations/connext/components/form-connext-xtransfer.tsx

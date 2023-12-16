@@ -182,8 +182,8 @@ export function IntervalInput() {
                     {startImmediately
                       ? secondExecution
                       : moment(startTime)
-                          .add(totalInterval, "seconds")
-                          .format("ll, HH:mm:ss")}
+                        .add(totalInterval, "seconds")
+                        .format("ll, HH:mm:ss")}
                   </span>
                 </div>
               </div>

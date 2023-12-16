@@ -33,8 +33,8 @@ export const ContractWriteButton = ({
       {isLoadingWrite
         ? loadingWriteText
         : isLoadingTx
-        ? loadingTxText
-        : children}
+          ? loadingTxText
+          : children}
     </Button>
   )
 }

@@ -66,15 +66,15 @@ export default function PageIntegration() {
             <Erc1155Deploy />
             <Erc1155DeployTest />
             <Erc1155SetTokenStorage />
-            {token && (
+            {token ? (
               <>
-                <Erc1155Read address={token} />
-                <Erc1155WriteMint address={token} />
-                <Erc1155WriteApprove address={token} />
-                <Erc1155WriteTransfer address={token} />
-                <Erc1155WriteBatchTransfer address={token} />
+                <Erc1155Read address={token as `0x${string}`} />
+                <Erc1155WriteMint address={token as `0x${string}`} />
+                <Erc1155WriteApprove address={token as `0x${string}`} />
+                <Erc1155WriteTransfer address={token as `0x${string}`} />
+                <Erc1155WriteBatchTransfer address={token as `0x${string}`} />
               </>
-            )}
+            ) : null}
           </div>
         </IsWalletConnected>
         <IsWalletDisconnected>

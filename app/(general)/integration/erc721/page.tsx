@@ -61,14 +61,14 @@ export default function ERC721Page() {
           <div className="flex w-full max-w-screen-lg flex-col gap-y-8">
             <ERC721Deploy />
             <Erc721SetTokenStorage />
-            {token && (
+            {token ? (
               <>
-                <Erc721Read address={token} />
-                <Erc721WriteMint address={token} />
-                <Erc721WriteApprove address={token} />
-                <Erc721WriteTransfer address={token} />
+                <Erc721Read address={token as `0x${string}`} />
+                <Erc721WriteMint address={token as `0x${string}`} />
+                <Erc721WriteApprove address={token as `0x${string}`} />
+                <Erc721WriteTransfer address={token as `0x${string}`} />
               </>
-            )}
+            ) : null}
           </div>
         </IsWalletConnected>
         <IsWalletDisconnected>

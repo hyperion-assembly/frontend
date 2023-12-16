@@ -1,4 +1,4 @@
-import { ImageResponse } from "next/server"
+import { ImageResponse } from "next/og"
 
 import { siteConfig } from "@/config/site"
 
@@ -29,7 +29,7 @@ export default async function Image() {
         }}
       >
         <img
-          alt="TurboETH Logo"
+          alt="Hyperion Assembly Logo"
           src={new URL(
             "../public/hyperion_assembly_logo.png",
             import.meta.url

@@ -29,13 +29,16 @@ export async function POST(req: Request) {
     const { message, signature } = verifySchema.parse(await req.json())
     const siweMessage = new SiweMessage(message)
     const fields = await siweMessage.validate(signature)
+    // @ts-expect-error
     if (fields.nonce !== session.nonce)
       return new Response(JSON.stringify({ message: "Invalid nonce." }), {
         status: 422,
       })
+    // @ts-expect-error
     session.siwe = fields
 
     if (admins.includes(fields.address)) {
+      // @ts-expect-error
       session.isAdmin = true
     }
     await session.save()

@@ -33,8 +33,8 @@ export async function POST(
       GetContractLogs | GetContractEvents,
       GetContractLogs | GetContractEvents
     > = isGetContractLogs
-      ? getContractLogsSchema.safeParse(requestJson)
-      : getContractEventsSchema.safeParse(requestJson)
+        ? getContractLogsSchema.safeParse(requestJson)
+        : getContractEventsSchema.safeParse(requestJson)
 
     if (!safeRequest.success) throw new Error("Invalid request body")
     const { data } = safeRequest
@@ -47,7 +47,7 @@ export async function POST(
       events = await Moralis.EvmApi.events[safeMethod](data.args)
     } else {
       // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-      // @ts-ignore
+      // @ts-expect-error
       events = await Moralis.EvmApi.events[safeMethod](data.args)
     }
 

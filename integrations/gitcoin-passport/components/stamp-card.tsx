@@ -47,10 +47,10 @@ export const StampCard = ({
   const addressHasStamp = !stamp
     ? false
     : addressStamps?.find(
-        (addressStamp) =>
-          addressStamp.provider === stamp.id ||
-          addressStamp.items.includes(stamp.id)
-      )
+      (addressStamp) =>
+        addressStamp.provider === stamp.id ||
+        addressStamp.items.includes(stamp.id)
+    )
   return (
     <Card
       className={cn(
