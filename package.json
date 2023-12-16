@@ -1,13 +1,7 @@
 {
-  "name": "@turbo-eth/template-web3-app",
+  "name": "@hyperion-assembly/frontend",
   "version": "0.0.0",
   "license": "MIT",
-  "contributors": [
-    {
-      "name": "Kames Geraghty",
-      "did": "kames.eth"
-    }
-  ],
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -35,7 +29,6 @@
     "npm": ">=7.0.0",
     "node": ">=18.0.0"
   },
-  "packageManager": "pnpm@7.1.8",
   "dependencies": {
     "@bgd-labs/aave-address-book": "^1.30.0",
     "@connext/sdk": "2.0.4-alpha.2",

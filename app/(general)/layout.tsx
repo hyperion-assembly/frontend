@@ -18,9 +18,6 @@ export default function RootLayout({ children }: RootLayoutProps) {
         <Footer />
       </div>
       <NetworkStatus />
-      <div className="fixed bottom-6 left-6">
-        <WalletConnect />
-      </div>
     </>
   )
 }

@@ -43,9 +43,6 @@ export default function DashboardLayout({ children }: DashboardLayoutProps) {
         </aside>
         <main className="flex w-full flex-col overflow-hidden">{children}</main>
       </div>
-      <div className="fixed bottom-6 right-6">
-        <WalletConnect />
-      </div>
     </div>
   )
 }

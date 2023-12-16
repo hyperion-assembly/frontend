@@ -36,7 +36,7 @@ export default function HomePage() {
             <Button
               variant="default"
               size="lg"
-              className="px-6 py-6"
+              className="p-6"
               type="button"
             >
               Join Hyperion
@@ -50,7 +50,7 @@ export default function HomePage() {
             <Button
               variant="secondary"
               size="lg"
-              className="px-6 py-6"
+              className="p-6"
               type="button"
             >
               Read more
@@ -90,7 +90,7 @@ export default function HomePage() {
           </Link>
         </PageHeaderCTA> */}
       </PageHeader>
-      <ExampleDemos />
+      {/* <ExampleDemos /> */}
     </div>
   )
 }
