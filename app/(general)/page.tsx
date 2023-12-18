@@ -1,5 +1,6 @@
 import Image from "next/image"
 import Link from "next/link"
+import { FaArchway, FaGithub, FaTelegram } from "react-icons/fa"
 
 import { siteConfig } from "@/config/site"
 import { cn } from "@/lib/utils"
@@ -10,7 +11,6 @@ import {
   PageHeaderDescription,
   PageHeaderHeading,
 } from "@/components/layout/page-header"
-import { FaArchway, FaGithub, FaTelegram } from "react-icons/fa"
 
 export default function HomePage() {
   return (
