@@ -9,7 +9,7 @@ interface SiteConfig {
   localeDefault: string
   links: {
     docs: string
-    discord: string
+    telegram: string
     twitter: string
     github: string
     farcaster: string
@@ -27,9 +27,9 @@ export const siteConfig: SiteConfig = {
   localeDefault: "en",
   links: {
     docs: "https://github.com/hyperion-assembly",
-    discord: "https://github.com/hyperion-assembly",
+    telegram: "https://t.me/hellno_hellno",
     twitter: "https://github.com/hyperion-assembly",
     github: "https://github.com/hyperion-assembly",
-    farcaster: "https://github.com/hyperion-assembly",
+    farcaster: "https://warpcast.com/hellno",
   },
 }

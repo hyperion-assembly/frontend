@@ -10,7 +10,7 @@ import {
   PageHeaderDescription,
   PageHeaderHeading,
 } from "@/components/layout/page-header"
-import { ExampleDemos } from "@/components/shared/example-demos"
+import { FaArchway, FaGithub, FaTelegram } from "react-icons/fa"
 
 export default function HomePage() {
   return (
@@ -44,20 +44,11 @@ export default function HomePage() {
             rel="noreferrer noopener"
           >
             <Button variant="secondary" size="lg" className="p-6" type="button">
-              Read more
+              Learn more
             </Button>
           </Link>
         </PageHeaderCTA>
-        {/* <PageHeaderCTA>
-          <Link
-            href={siteConfig.links.docs}
-            target="_blank"
-            rel="noreferrer noopener"
-            className={buttonVariants({ variant: "default" })}
-          >
-            <LuBook className="mr-2 h-4 w-4" />
-            Docs
-          </Link>
+        <PageHeaderCTA className="mt-12">
           <Link
             href={siteConfig.links.github}
             target="_blank"
@@ -68,18 +59,30 @@ export default function HomePage() {
             Github
           </Link>
           <Link
-            href={siteConfig.links.discord}
+            href={siteConfig.links.farcaster}
             target="_blank"
             rel="noreferrer noopener"
             className={cn(
               buttonVariants(),
-              "bg-[#7289da] text-white hover:bg-[#7289da]/80"
+              "bg-[#8465CB] text-white hover:bg-[#8465CB]/80"
             )}
           >
-            <FaDiscord className="mr-2 h-4 w-4" />
-            Discord
+            <FaArchway className="mr-2 h-4 w-4" />
+            Farcaster
           </Link>
-        </PageHeaderCTA> */}
+          <Link
+            href={siteConfig.links.telegram}
+            target="_blank"
+            rel="noreferrer noopener"
+            className={cn(
+              buttonVariants(),
+              "bg-[#5FB2EC] text-white hover:bg-[#5FB2EC]/80"
+            )}
+          >
+            <FaTelegram className="mr-2 h-4 w-4" />
+            Telegram
+          </Link>
+        </PageHeaderCTA>
       </PageHeader>
       {/* <ExampleDemos /> */}
     </div>
